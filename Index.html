@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel perfect</title>
+    <script src="https://kit.fontawesome.com/58229b6034.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header flex">
+        <div class="container flex space-between header-content">
+            <h2 class="logo">Blogin<span>.</span></h2>
+            <nav class="nav-bar flex">
+                <p>Journal</p>
+                <p>About</p>
+                <p>Work</p>
+                <p>Contact</p>
+            </nav>
+            <p class="mobile-menu-btn" onclick="toggleMenu()">☰</p>
+        </div>
+    </header>
+
+    <div class="main-content container thin-border">
+        <div class="card flex">
+            <img src="./img/card-1.PNG" alt="Image" class="img-card">
+            <div class="content flex">
+                <h2 class="content-header">DUIS AUTO IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p class="content-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... </p>
+                <button class="content-btn">Continue Reading </button>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <img src="./img/card-2.PNG" alt="Image" class="img-card">
+            <div class="content flex">
+                <h2 class="content-header">DUIS AUTO IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p class="content-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... </p>
+                <button class="content-btn">Continue Reading </button>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <img src="./img/card-3.PNG" alt="Image" class="img-card">
+            <div class="content flex">
+                <h2 class="content-header">DUIS AUTO IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p class="content-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... </p>
+                <button class="content-btn">Continue Reading </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="change-page container flex space-between align-center">
+        <div class="change-diraction flex align-center">
+            <i class="fas fa-long-arrow-alt-left arrow"></i>
+            <p class="page-p flex align-center">Previous</p>
+        </div>
+        <div class="change-diraction flex align-center">
+            <p class="page-p flex align-center">Next</p>
+            <i class="fas fa-long-arrow-alt-right arrow"></i>
+        </div>
+    </div>
+
+    <footer class="flex">
+        <h2 class="logo-footer">Blogin<span>.</span></h2>
+        <P class="p-footer">© 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at <span>Pixelhint.com</span></P>
+        <div class="icons-footer">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-dribbble-square"></i>
+            <i class="fab fa-behance-square"></i>
+        </div>
+    </footer>
+
+    <div class="empty" onclick="toggleMenu()"></div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-bar').classList.toggle('nav-bar-open');
+            document.querySelector('.empty').classList.toggle('empty-open');
+        }
+    </script>
+</body>
+</html>
